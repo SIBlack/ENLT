@@ -1,0 +1,33 @@
+<ion-view title="{{'list_title' | translate}}">
+<!--
+  <ion-nav-buttons side="right">
+    <button class="button button-icon ion-plus" ng-click="addPlaylist()"></button>
+  </ion-nav-buttons>
+-->
+  <ion-content>
+
+
+    <ion-list>
+            <ion-item ng-repeat="item in items"  >
+        
+        
+        <div class="item item-body">
+        <div>
+   <b>{{item.name}}</b>
+      <h3> {{item.vertimas}}</h3>
+        </div>
+
+
+    
+ 
+        </ion-item>
+    
+<!--
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.$id}}">
+        {{playlist.title}}
+      </ion-item>
+-->
+    
+    </ion-list>
+  </ion-content>
+</ion-view>

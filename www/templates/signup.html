@@ -1,0 +1,29 @@
+
+<ion-view view-title="Login">
+  <ion-content class="padding">
+    <div class="lreg">
+      <div class="item item-divider"><center><div>{{"reg_title" | translate}}</div></center></div>
+      <div class="item item-body">
+        <div>
+
+        <form>
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Name</span>
+                    <input type="text" ng-model="data.displayname" placeholder="">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Email</span>
+                    <input type="text" ng-model="data.email" placeholder="">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="data.password" placeholder="">
+                </label>
+            </ion-list>
+     
+            <button class="button button-full button-positive" ng-click="Signup(data)">Sign up</button>
+              <a class="button button-full button-positive"  ui-sref="login">  {{"reg_button" | translate}}</a>
+                        </form>
+    </ion-content>
+</ion-view>

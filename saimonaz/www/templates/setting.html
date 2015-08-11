@@ -1,0 +1,25 @@
+
+<ion-view title="{{'s_title' | translate}}">
+
+    <ion-content>
+        <ion-list>
+<!--
+            <ion-item ng-click="logout()">      {{"logout" | translate}}</ion-item>
+          
+-->
+  <div class="list card">
+      <div class="item item-divider">{{'s_select' | translate}}</div>
+      <div class="item item-body">
+        <div>
+          <ion-radio ng-model="choice" ng-value="'en-US'" ng-click="changeLanguage('en')">English</ion-radio>
+            <ion-radio ng-model="choice" ng-value="'hi-IN'" ng-click="changeLanguage('lt')">Lithuanian</ion-radio>
+        </div>
+      </div>
+    </div>
+
+    
+        </div>
+   
+        </ion-list>
+    </ion-content>
+</ion-view>
